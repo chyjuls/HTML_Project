@@ -1,0 +1,10 @@
+/* mystyle.css */
+
+
+h1{color:darkgreen; font-size: 26px; font-weight: 400; font-style: italic ;line-height: normal; line-break: auto;}
+
+p{color: darkblue; font-size: 16px; font-weight: 200; font-style:oblique 10deg; line-height:1.8; line-break: auto;
+}
+li{color: darkblue; font-size: 16px; font-weight: 200; font-style:oblique 10deg; line-height:1.8; line-break: auto;
+     }
+    body{background-color: bisque;}
