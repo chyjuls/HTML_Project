@@ -1,10 +1,186 @@
 /* mystyle.css */
 
 
-h1{color:darkgreen; font-size: 26px; font-weight: 400; font-style: italic ;line-height: normal; line-break: auto;}
-
-p{color: darkblue; font-size: 16px; font-weight: 200; font-style:oblique 10deg; line-height:1.8; line-break: auto;
+* {box-sizing:  flex;
+    
 }
-li{color: darkblue; font-size: 16px; font-weight: 200; font-style:oblique 10deg; line-height:1.8; line-break: auto;
+
+
+
+body{
+     margin: 0px;
+     padding: 0px;
+     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
+     background-blend-mode:screen; 
+     Background-repeat:no repeat;
+     background-color: rgb(218, 186, 211); 
+     background-size: cover; 
+     height:480px; 
+     padding-top:80px;
+     background-attachment: fixed;
+}
+
+
+/*  create three equal columns that sits next to each other */
+
+.column{ flex: 33.33%;
+     padding: 5px;
+}
+
+
+.row {display: flex;
+}
+
+
+.header{
+     display: flex;
+     justify-content: space-evenly;
+     height: 300px;
+     width: auto;
+     border: none;
+     padding: 14px;
+}
+          
+       
+        
+     
+ h1{ color: black ;
+     font-size: 26px; 
+     font-weight: 700; 
+     font-style: italic ;
+     line-height: normal; 
+     line-break: auto;
+     padding: 20px;
+}
+.tabcontent1{
+
+     margin: 0%;
+     color:rebeccapurple;
+     font-size: 20px; 
+     font-weight: bolder; 
+     font-style:  oblique;
+     line-height: normal; 
+     padding:10px 10px 10px 10px;
+     justify-content: space-evenly;
+     text-align: justify;
+     text-align-last: auto;
+     word-spacing: normal;
+     font-family: cursive;
+}
+
+
+
+.tabcontent2 {
+
+     margin: 0%;
+     color:rebeccapurple;
+     font-size: 20px; 
+     font-weight: bolder; 
+     font-style:  oblique;
+     line-height: normal; 
+     background-color: rgb(224, 171, 216);
+     padding:10px 10px 10px 10px;
+     justify-content: space-evenly;
+     text-align: justify;
+     text-align-last: auto;
+     word-spacing: normal;
+     font-family: cursive;
+    
+    
      }
-    body{background-color: bisque;}
+
+
+     h2{ color: black ;
+          font-size: 26px; 
+          font-weight: 700; 
+          font-style: italic ;
+          line-height: normal; 
+          line-break: auto;
+          padding: 16px;
+         
+     }
+     .image1{
+          padding: 0;
+          float: inline-end;
+          height: auto;
+          width: 300px;
+          margin:0px;
+          display:block;
+     }
+
+
+     
+
+
+.tabcontent3{
+
+     margin: 0%;
+     color: rebeccapurple;
+     font-size: 20px; 
+     font-weight: bolder; 
+     font-style:  oblique;
+     line-height: normal; 
+     background-color: rgb(224, 171, 216);
+     padding:10px 10px 10px 10px;
+     justify-content: space-evenly;
+     text-align: justify;
+     text-align-last: auto;
+     word-spacing: normal;
+     font-family:cursive;
+     
+
+    
+}
+h3{color: black ;
+     font-size: 26px; 
+     font-weight: 700; 
+     font-style: italic ;
+     text-align: center;
+     line-height: normal; 
+     line-break: auto;
+     padding: 20px;}
+    
+.image2 { padding: 0;
+          float:right;
+          height:400px;
+          width: 400px;
+          margin:0px;
+          display:block;
+     }
+
+
+.tab {
+     overflow: hidden;
+     border: none;
+     background-color: rgba(233, 204, 233, 0.993);
+     display: flex;
+     align-items: flex-end;
+     
+
+    }
+    .tab button {
+     background-color:rgb(161, 6, 123);
+     opacity: 1;
+     float: left;
+     border: none;
+     outline: none; 
+     cursor: pointer;
+     padding:14px 20px; 
+     margin: 0%;
+     transition: 0.3s;
+     font-size: medium; 
+     font-weight: bold; 
+     font: italic small-caps bold 20px/2 cursive;
+     width: 33.33%;
+}
+     
+
+     .tab button:hover {
+          background-color: rgba(194, 158, 196, 0.144);}
+          
+     
+     
+          
+
+
+     
