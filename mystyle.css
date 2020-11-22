@@ -10,21 +10,16 @@
 body{
      margin: 0px;
      padding: 0px;
-     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
-     background-blend-mode:screen; 
-     Background-repeat:no repeat;
-     background-color: rgb(218, 186, 211); 
-     background-size: cover; 
      height:480px; 
-     padding-top:80px;
-     background-attachment: fixed;
+     padding-top:80px; 
+     
 }
 
 
 /*  create three equal columns that sits next to each other */
 
 .column{ flex: 33.33%;
-     padding: 5px;
+     padding: 0px;
 }
 
 
@@ -32,29 +27,82 @@ body{
 }
 
 
-.header{
-     display: flex;
-     justify-content: space-evenly;
-     height: 300px;
-     width: auto;
-     border: none;
-     padding: 14px;
-}
-          
-       
         
      
- h1{ color: black ;
-     font-size: 26px; 
+ h1{ color: rebeccapurple; 
+     font-size: 40px; 
      font-weight: 700; 
      font-style: italic ;
      line-height: normal; 
      line-break: auto;
      padding: 20px;
 }
-.tabcontent1{
-
+.tabcontent{ 
      margin: 0%;
+     position: absolute; 
+     color:rebeccapurple;
+     font-size: 30px; 
+     font-weight: bolder; 
+     font-style:  italic;
+     line-height: normal; 
+     padding:10px 10px 10px 10px;
+     justify-content: space-evenly;
+     text-align: center;
+     word-spacing: normal;
+     font-family: cursive;
+     background-size: cover; 
+     background-color:  #ffe6ff;
+     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
+     Background-repeat:no repeat;
+     background-attachment: fixed;
+     background-blend-mode:screen; 
+     background-size: cover; 
+     background-blend-mode:screen;
+
+
+}
+
+.image1{
+     padding: 0;
+     float: inline-end;
+     height: auto;
+     width: 400px;
+     margin:0px;
+     display:block;
+     position: relative;
+
+} 
+
+
+.Portfolio{
+
+     position: absolute;
+     top:40%;
+     right:40%;
+     text-decoration: underline;
+     text-align: center;
+     justify-content: space-evenly;
+     font-weight: 200px;
+     font-size: 60px;
+      padding:10px 10px;
+      transform:translate(-50%);
+      
+}
+
+
+.name
+{
+     position: absolute;
+     top: 60%;
+     left: 40%;
+     font-weight: 150px;
+     font-size: 30px;
+     justify-content: space-evenly; 
+     text-decoration: underline;
+     transform:translate(-50%);
+}
+
+.tabcontent1{margin: 0%;
      color:rebeccapurple;
      font-size: 20px; 
      font-weight: bolder; 
@@ -65,7 +113,15 @@ body{
      text-align: justify;
      text-align-last: auto;
      word-spacing: normal;
-     font-family: cursive;
+     font-family: cursive; 
+     background-color: #ffe6ff;
+     background-size: cover; 
+     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
+     Background-repeat:no repeat;
+     background-attachment: fixed;
+     background-blend-mode:screen; 
+     background-size: cover; 
+     background-blend-mode:screen;
 }
 
 
@@ -78,19 +134,35 @@ body{
      font-weight: bolder; 
      font-style:  oblique;
      line-height: normal; 
-     background-color: rgb(224, 171, 216);
      padding:10px 10px 10px 10px;
      justify-content: space-evenly;
      text-align: justify;
      text-align-last: auto;
      word-spacing: normal;
-     font-family: cursive;
+     font-family: cursive; 
+     background-color: #ffe6ff;
+     background-size: cover; 
+     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
+     Background-repeat:no repeat;
+     background-attachment: fixed;
+     background-blend-mode:screen; 
+     background-size: cover; 
+     background-blend-mode:screen;
+
     
+}
     
+     .para2{ text-align: justify;
+          padding:10px;
+          Font-weight: 100px;
+          font-family:cursive;
+          word-spacing: normal;
+          
+
      }
 
 
-     h2{ color: black ;
+     h2{ color: rebeccapurple;
           font-size: 26px; 
           font-weight: 700; 
           font-style: italic ;
@@ -99,39 +171,38 @@ body{
           padding: 16px;
          
      }
-     .image1{
-          padding: 0;
-          float: inline-end;
-          height: auto;
-          width: 300px;
-          margin:0px;
-          display:block;
-     }
-
-
      
+
+     /* style tabcontent3 and the headers and place image relative to text */
 
 
 .tabcontent3{
 
      margin: 0%;
+     box-sizing: border-box;
      color: rebeccapurple;
      font-size: 20px; 
      font-weight: bolder; 
      font-style:  oblique;
      line-height: normal; 
-     background-color: rgb(224, 171, 216);
      padding:10px 10px 10px 10px;
      justify-content: space-evenly;
-     text-align: justify;
-     text-align-last: auto;
+     text-align:justify;
      word-spacing: normal;
      font-family:cursive;
-     
-
-    
+     background-color: #ffe6ff;
+     background-size: cover; 
+     background-image: url("../image/StockSnap_CKDVQPAIBQ.jpg");
+     Background-repeat:no repeat;
+     background-attachment: fixed;
+     background-blend-mode:screen; 
+     background-size: cover; 
+     background-blend-mode:screen;
 }
-h3{color: black ;
+
+
+h3{
+     color:rebeccapurple;
      font-size: 26px; 
      font-weight: 700; 
      font-style: italic ;
@@ -149,6 +220,8 @@ h3{color: black ;
      }
 
 
+/* styling the tabs and spacing it out  */
+
 .tab {
      overflow: hidden;
      border: none;
@@ -158,14 +231,15 @@ h3{color: black ;
      
 
     }
+    /* Tab buttons style */
+
     .tab button {
      background-color:rgb(161, 6, 123);
      opacity: 1;
-     float: left;
      border: none;
      outline: none; 
      cursor: pointer;
-     padding:14px 20px; 
+     padding:14px 16px; 
      margin: 0%;
      transition: 0.3s;
      font-size: medium; 
@@ -174,13 +248,62 @@ h3{color: black ;
      width: 33.33%;
 }
      
+/* hover over tab colour changes */
 
      .tab button:hover {
-          background-color: rgba(194, 158, 196, 0.144);}
           
-     
+        background-color: rgba(128, 128, 128, 0.603);
+     }
+
+       
+
+     footer {
+          text-align: center;
+          padding: 10px;
+          background-color:rgb(235, 219, 231);
+          color: white;
+          justify-content: space-evenly;
+     }
+          .para3{
+               Font: size 30px;
+               color:white;
+               text-align: center;
+               font-weight: 20px;
+          }
+
+     .fa {
+          padding: 10px;
+          font-size: 40px;
+          width: 30px;
+          text-align: center;
+          text-decoration: none;
+          margin:0;
+          border-radius: 50%;
+          
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
      
           
-
-
+        .fa-linkedin {
+          background: #007bb5;
+          color: white;
+        }
+        
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
+        
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
      

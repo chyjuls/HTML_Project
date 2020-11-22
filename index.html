@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css\mystyle.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My HTML PAGE</title>
 </head>
 
 <body>
 
-    <Header class="Header"> 
+    
         
         <!---FLEX CONTAINER 1-->
 
@@ -17,28 +18,50 @@
     <!-- div class for tabs -->
 
     <div class="tab">
-        <button class="tablinks" onclick="openpage('HOME')"id ="defaultOpen">HOME</button>
-        <button class="tablinks" onclick="openpage('SKILLS')">SKILLS</button>
-        <button class="tablinks" onclick="openpage('CONTACT',  this, 'green')">CONTACT</button>
-    </div>
 
-    </Header>
+
+        <button class="tablinks" onclick="openpage('HOME')"id ="defaultOpen">HOME</button>
+        <button class="tablinks" onclick="openpage('ABOUT ME')">ABOUT ME</button>
+        <button class="tablinks" onclick="openpage('SKILLS')">SKILLS</button>
+        <button class="tablinks" onclick="openpage('CONTACT')">CONTACT</button>
+    
+</div>
+
+
 
  
     <!-- Placing contents in each  -->
 
-    <div id="HOME" class="tabcontent1">
+    <!-- Placing contents in the first tab -->
+
+    <div id="HOME" class="tabcontent">
+
+            <header class="Portfolio">
+                My Portfolio <br>
+            </header>
+            
+
+         <p class="name"> Chichi Ugorji, Student at Women in Cyber Academy.</p>
+         <img src ="image\justme.jpg" alt="Just me" style = "Width: 80%; padding:0%; margin:0%; padding: 0%;  height: fit-content;">
+    </div>
+
+</div>
+</div>
+
+    <div id="ABOUT ME" class="tabcontent1">
+
+        <!-- Arranging images as columns in the about me section. -->
 
 <div class="row">
 
         <div class="column">
-           <img src="image\StockSnap_2SQIRDV0HV.jpg" alt= "Be the change" style= "width:100%; height: 100%">
+           <img src="image\StockSnap_2SQIRDV0HV.jpg" alt= "Be the change" style= "width:100%; height: 80%">
        </div>
        <div class ="column">
-           <img src ="image\StockSnap_CKDVQPAIBQ.jpg" alt ="random_background" style ="width:100%; height: 100%">
+           <img src ="image\katie-az-6z-iyOLBEtM-unsplash.jpg" alt ="coffee and books" style ="width:100%; height: 80%">
        </div>
        <div class ="column">
-           <img src ="image\StockSnap_MHE5ZEDRF6.jpg" alt ="blue sky" style ="width:100%;height: 100%">
+           <img src ="image\StockSnap_MHE5ZEDRF6.jpg" alt ="blue sky" style ="width: 100%;height: 80%">
        </div>
        </div>
 
@@ -63,7 +86,7 @@
     </p>
     <br>
     
-    <h1>My Tech Journey…..</h1>
+    <h2>My Tech Journey…..</h2>
 <p>
     I started out with hardware, 
     having taken exams in CompTIA networking and Microsoft’s 
@@ -77,7 +100,7 @@
 </p>
 
 
-    <h1>Women in Cyber Academy in Focus.</h1>
+    <h2>Women in Cyber Academy in Focus.</h2>
    
 <p>
     I have finally decided to choose the Cybersecurity path. 
@@ -93,7 +116,7 @@
      I hope that one day, I will use my skills to make an immense contribution to the healthcare industry.
     </p>
     
-    <h1>What I love doing apart from work and study.</h1>
+    <h2>What I love doing apart from work and study.</h2>
     <p>
         I have a passion for life, well for living, and so I have a few hobbies outside
         work. I love nature and so on days when I feel stressed or anxious, I take a long  walk,
@@ -129,21 +152,24 @@
 
     
     <div class = "image1">
-        <img src= "image\justme.jpg" alt="Happy me" style="width:100%;" >
+        <img src= "image\stethoscope-3541909_1920.jpg" alt="Stethoscope" style="width:100%;" >
     </div>
-        <br><br>
+        <br><br><br><br>
 
-    <h2>A few things I do well...</h2>  
+    <h1>A few things I do well...</h1>  <br><br>
 
+    <p class=para2>
+        I am a diagnostic radiographer by profession, but very passionate about information technology and security.<br>
+        Skills aquired  by self-learning and determination, include troubleshooting network related problems, setting up user accounts;
+        <br> configuring health care systems; project support and use of excel spread sheets for data optimisation and visualisation.<br><br>
+        <p>
+            Research and writing (medical journals) are some of the skills I acquired during my time as research radiographer.<br>
+            Use of Microsoft’s 365 products as well as project mamangement tools are some skills I also acquired when I worked as as IT business analytics,<br>
+            in a private healthcare company.<br>
+            I have endeavoured to combine my love for technology with healthcare and enjoy learning new skills as well as taking up<br>
+            new challenges,this being one of the reasons for joining the WIC program.
+        </p>
 
-
-
-
-
-    <p>
-       
-    </p>
-    
 
 </div>
 
@@ -155,9 +181,14 @@
         <img src= "image\work_laptop.jpg" alt="work_laptop" style="width: 400px;" >
     </div>
         <br><br>   
-    <h3>Contact form</h3>
 
-<br>
+    <h3>
+     <p>Put in your contact details using the form below. <br><b>
+      It will be nice to get to you know better!</h3>
+    </p>
+
+<br><br>
+
 
 <label for="fname">First name:</label>
 <input type="text" id="fname" name="fname"><br><br>
@@ -173,6 +204,28 @@
 </div>
 
 
+<footer>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <p>
+        <nav> 
+            <p class=para3> 
+                <a href= 
+"#">About Us</a>|  
+                <a href= 
+"#">Privacy Policy</a>|  
+                <a href= 
+"#">Contact</a>  
+            </p> 
+        </div>
+        </nav> 
+    
+    </footer>
+</footer>
+
+
 
  
 <!-- Javascript for the tab buttons to work -->
@@ -186,10 +239,14 @@
 
   // Get all elements with class="tabcontent" and hide them
 
-  tabcontent = document.getElementsByClassName("tabcontent1");
+  tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+  tabcontent = document.getElementsByClassName("tabcontent1");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";}
+
   tabcontent = document.getElementsByClassName("tabcontent2");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -214,7 +271,10 @@
   // Show the current tab, and add an "active" class to the button that opened the tab
 
   document.getElementById(Pagename).style.display = "block";
-  " active";}
+  evt.currentTarget.className += " active";
+} 
+
+  
 
   document.getElementById("defaultOpen").click();
   
