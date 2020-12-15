@@ -180,7 +180,7 @@
 
 <br><br>
 
-<form  name = "ContactForm" onsubmit="validateform(); ValidateEmail(); ValidatePhone();">
+<form  name = "ContactForm" onsubmit="validateform();">
 
 <label for="fname">First name:</label>
 <input type="text" id="fname" name="fname"><br><br>
@@ -193,7 +193,7 @@
 
 <textarea id="message"placeholder="Message" ></textarea>
 <br><br>
-<button class="submit" onclick= return false;>Submit</button>
+<button class="submit" onclick= "validateform();return false";>Submit</button>
 </form>
 
 </div>

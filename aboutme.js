@@ -53,19 +53,19 @@
 
 // validating the email and ensuring all letters and special characters can be used, regex is used.
 
-  // Defiine a function ValidateEmail, and create two variables which will be compared.
-
-  // to make sure this is only focused on the email add field use the code below:
-
+ // Only one function is used to validate the fields, to make the code easy to read
+ // and to ensure web page security.
 
 
 
-
-    function validateform(){  
+    function validateform()
+    {  
      var fname=document.ContactForm.fname.value;  
      var lname=document.ContactForm.lname.value;
      var PhoneNumber=document.ContactForm.PhoneNumber.value;
-      var Email=document.ContactForm.Email.value;
+    var Email=document.ContactForm.Email.value;
+    var reg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
     if (fname==null || fname==""){  
       alert("Name can not be blank");  
@@ -85,45 +85,42 @@
     
    else if(Email ==null||Email==""){
     alert("Email can not be blank");
-    document.ContactForm.Email.focus();
     return false;
 }
+ else if(!reg.test(Email)){
+  alert("Invalid email, please enter a valid email address");
+    return false;
+  }
+  else if(!phoneno.test(PhoneNumber)){
+    alert("Please enter a valid phone number");
+      return false;
+
     
    }
   
-   function ValidateEmail() {
-
-    var reg= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    var address= document.ContactForm.Email.value;
+   return true;
     
-    if(!reg.test(address)){
-    alert("Invalid email, please enter a valid email address");
-      return true;
-    }
+  }
 
   
-     }
-
-     // to validate phone number, define a function ValidatePhone and create variables.
-     // To ensure only digits are used and that digits doe not exceed 11 and in the right format, use regex /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
      
-     function ValidatePhone()
+
+    
+     
+     
 
 
-      {
-        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-        var number=document.ContactForm.PhoneNumber.value;
+      
+        
+        
 
-        if(!phoneno.test(number)){
-          alert("Please enter a valid phone number");
-            return false;
-
+        
       
           
-        }
+        
       
       
-      }
+      
     
   
 
